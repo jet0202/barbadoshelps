@@ -119,7 +119,7 @@ const Footer = () => {
               </Link>
             </Box>
           </HStack>
-          <Text color={'paragraph200'}>
+          <Text fontSize={'sm'} color={'paragraph200'}>
             Barbados Helps Inc. is incorporated as a non-profit company pursuant
             to the Companies Act Cap. 308 of the laws of Barbados with company
             number 46183. 2022 ALL RIGHTS RESERVED BARBADOSHELPS.ORG
