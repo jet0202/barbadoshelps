@@ -12,35 +12,37 @@ import IconButton from './buttons/IconButton';
 
 const Hero = () => {
   return (
-    <HStack backgroundColor={'siteBackground2'} pl={'100px'}>
-      <VStack align={'flex-start'}>
-        <Box>
-          <Heading color={'brand200'} size={'4xl'} fontWeight="black">
+    <HStack backgroundColor={'siteBackground2'} pl={6} h={'80vh'}>
+      <Box position={'relative'} zIndex={'2'}>
+        <VStack align={'flex-start'} spacing={6}>
+          <Heading as={'h1'} size={{ base: '4xl' }} color={'brand200'}>
             Give from <br />
             the Heart, <br />
             Give a Hand
           </Heading>
-        </Box>
-        <Box maxWidth={'657px'}>
-          <Text color={'paragraph400'} lineHeight={'32px'}>
+          <Text color={'paragraph400'}>
             Charities most often do not get any financial support from the
             government and therefore depend completely on the generosity of
             individual and corporate donors.{' '}
-            <Box as={'span'} color={'brand200'} fontWeight={'extrabold'}>
+            <Box as="span" color={'brand200'} fontWeight={'bold'}>
               Find a charity to support today!
             </Box>
           </Text>
-        </Box>
-
-        <HStack>
-          <IconButton>Help Now</IconButton>
-          <Link href="/register">
-            <Text>Register as a Donor</Text>
-          </Link>
-        </HStack>
-      </VStack>
-      <Box>
-        <Image src={'../woman.jpg'} alt="" />
+          <HStack>
+            <IconButton>Help Now</IconButton>
+            <Link href="/register">
+              <Text color={'brand200'}>Register as a Donor</Text>
+            </Link>
+          </HStack>
+        </VStack>
+      </Box>
+      <Box pos={'absolute'} zIndex="1">
+        <Image
+          src="../hero/woman.png"
+          alt="Older woman smiling"
+          h={28}
+          top={'140'}
+        />
       </Box>
     </HStack>
   );
