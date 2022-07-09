@@ -12,8 +12,14 @@ import IconButton from './buttons/IconButton';
 
 const Hero = () => {
   return (
-    <HStack backgroundColor={'siteBackground2'} pl={6} h={'80vh'}>
-      <Box position={'relative'} zIndex={'2'}>
+    <HStack
+      pos={'relative'}
+      backgroundColor={'siteBackground2'}
+      pl={{ base: 4, md: 20 }}
+      pr={{ base: 4, md: 20 }}
+      h={'80vh'}
+    >
+      <Box position={'absolute'} zIndex={'2'}>
         <VStack align={'flex-start'} spacing={6}>
           <Heading as={'h1'} size={{ base: '4xl' }} color={'brand200'}>
             Give from <br />
@@ -36,12 +42,16 @@ const Hero = () => {
           </HStack>
         </VStack>
       </Box>
-      <Box pos={'absolute'} zIndex="1">
+      <Box
+        pos={'absolute'}
+        zIndex="1"
+        top={{ base: '158px', md: '40px' }}
+        right={'20px'}
+      >
         <Image
           src="../hero/woman.png"
           alt="Older woman smiling"
-          h={28}
-          top={'140'}
+          h={{ base: 28, md: 'xl' }}
         />
       </Box>
     </HStack>
