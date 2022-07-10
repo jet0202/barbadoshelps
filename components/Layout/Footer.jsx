@@ -84,7 +84,7 @@ const socials = [
 
 const GridItems = ({ href, name }) => {
   return (
-    <Link color={'paragraph200'} href={href}>
+    <Link color={'paragraph200'} href={href} fontSize="xs">
       {name}
     </Link>
   );
@@ -99,6 +99,7 @@ const Footer = () => {
       pl={{ base: '1.5rem', md: 'none' }}
       height={'fit-content'}
       backgroundColor={'siteBackground2'}
+      align={'center'}
       justifyContent={'space-around'}
       direction={{ base: 'column', md: 'row' }}
     >
@@ -135,41 +136,6 @@ const Footer = () => {
         </Text>
       </VStack>
     </Stack>
-    // <Box as="footer" pt={6} pb={6} backgroundColor={'siteBackground2'}>
-    //   <HStack
-    //     justify={'space-around'}
-    //     direction={{ base: 'column', sm: 'column', md: 'row' }}
-    //   >
-    //     <SimpleGrid columns={4} spacing={4}>
-    //       {links.map((link) => (
-    //         <GridItems key={link.name} href={link.href} name={link.name} />
-    //       ))}
-    //     </SimpleGrid>
-    //     <VStack maxW={'xl'}>
-    //       <HStack>
-    //         <HStack spacing={'42px'}>
-    //           {socials.map((social) => (
-    //             <Center key={social.href}>
-    //               <Link href={social.href}>
-    //                 <Image height={6} w="6" src={social.icon} alt="" />
-    //               </Link>
-    //             </Center>
-    //           ))}
-    //         </HStack>
-    //         <Box>
-    //           <Link href="/">
-    //             <Image src="../logoGray.svg" alt="Logo" />
-    //           </Link>
-    //         </Box>
-    //       </HStack>
-    //       <Text fontSize={'sm'} color={'paragraph200'}>
-    //         Barbados Helps Inc. is incorporated as a non-profit company pursuant
-    //         to the Companies Act Cap. 308 of the laws of Barbados with company
-    //         number 46183. 2022 ALL RIGHTS RESERVED BARBADOSHELPS.ORG
-    //       </Text>
-    //     </VStack>
-    //   </HStack>
-    // </Box>
   );
 };
 

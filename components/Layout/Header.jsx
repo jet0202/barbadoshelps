@@ -14,6 +14,7 @@ import {
   IconButton as ChakraIconButton,
   useDisclosure,
   VStack,
+  Center,
 } from '@chakra-ui/react';
 import Link from 'next/link';
 import React from 'react';
@@ -96,40 +97,7 @@ const Header = () => {
           onClick={onOpen}
         />
       </HStack>
-      {/* <Flex
-        as="header"
-        backgroundColor="siteBackground"
-        h={'140px'}
-        pl={'3rem'}
-        pr={'3rem'}
-        justify="space-between"
-      >
-        <Box>
-          <Link href="/" passHref>
-            <ChakraLink>
-              <Image src="../logo.svg" alt="Logo" h={'8rem'} />
-            </ChakraLink>
-          </Link>
-        </Box>
-        <HStack as="nav" spacing={'8'}>
-          {links.map((link) => (
-            <Box
-              key={link.path}
-              visibility={{ base: 'hidden', sm: 'hidden', md: 'visible' }}
-            >
-              <NavLink color={link.color}>{link.child}</NavLink>
-            </Box>
-          ))}
 
-          <ChakraIconButton
-            icon={<HamburgerIcon />}
-            backgroundColor={'siteBackground'}
-            display={{ md: 'none', lg: 'none' }}
-            ref={btnRef}
-            onClick={onOpen}
-          />
-        </HStack>
-      </Flex> */}
       <Drawer
         isOpen={isOpen}
         placement="right"
@@ -141,7 +109,7 @@ const Header = () => {
           <DrawerCloseButton />
 
           <DrawerBody>
-            <VStack align={'center'} justify={'center'}>
+            <VStack align="center" justify="center" pt={'40'} spacing={8}>
               {links.map((link) => (
                 <NavLink color={link.color} key={link.child}>
                   {link.child}
