@@ -9,7 +9,7 @@ import React from 'react';
 
 const SearchBar = () => {
   return (
-    <InputGroup maxW={{ base: '80%', md: '40%' }}>
+    <InputGroup maxW={{ base: '80%', md: '35%' }}>
       <InputRightElement>
         <Image
           src="../hero/searchIcon.svg"

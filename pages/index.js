@@ -32,7 +32,7 @@ export default function Home() {
       </VStack>
 
       {/* Charities */}
-      <VStack as='section' align={'center'} justify={'center'} py={20} px={6} mt={10} mb={12} spacing={10}>
+      <VStack as='section' align={'center'} justify={'center'} backgroundColor={'siteBackground2'} py={20} px={6} mt={10} mb={12} spacing={10}>
         <Heading as="h3" size="3xl" color={'brand200'} marginBottom={'6'}>
           Charities
         </Heading>
@@ -50,21 +50,21 @@ export default function Home() {
         <Box marginTop={'20'}>
           <Button color={'white'} bgColor={'brand100'} borderRadius={'40px'} px={'6'} fontWeight={'light'}>More Charities</Button>
         </Box>
-
-        {/* Register Charity */}
-        <VStack as='section' align={'center'} justify={'center'} py={14} spacing={'8'}>
-          <Image src="../helpingLady.png" alt="Dog and Cat" h={{ base: 'sm', md: 'xl' }} />
-          <Heading as="h3" size="3xl" color={'brand200'}>
-            Register your Charity
-          </Heading>
-          <SimpleGrid columns={[1, null, 2]} spacingY={{ base: 6, md: 'revert' }} spacingX={{ base: 'revert', md: 8 }} >
-            <RegistrationCards color='brand100' title='Full Account' description={desc1} />
-            <RegistrationCards color='accent' title='Profile Account' description={desc2} />
-          </SimpleGrid>
-        </VStack>
-
-
       </VStack>
+
+      {/* Register Charity */}
+      <VStack as='section' align={'center'} justify={'center'} py={14} spacing={'8'}>
+        <Image src="../helpingLady.png" alt="Dog and Cat" h={{ base: 'sm', md: 'xl' }} />
+        <Heading as="h3" size="3xl" color={'brand200'}>
+          Register your Charity
+        </Heading>
+        <SimpleGrid columns={[1, null, 2]} spacingY={{ base: 6, md: 'revert' }} spacingX={{ base: 'revert', md: 8 }} >
+          <RegistrationCards color='brand100' title='Full Account' description={desc1} />
+          <RegistrationCards color='accent' title='Profile Account' description={desc2} />
+        </SimpleGrid>
+      </VStack>
+
+
     </>
   )
 }

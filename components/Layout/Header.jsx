@@ -1,20 +1,16 @@
 import {
   Box,
-  Flex,
   HStack,
   Image,
   Link as ChakraLink,
   Drawer,
   DrawerBody,
-  DrawerFooter,
-  DrawerHeader,
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
   IconButton as ChakraIconButton,
   useDisclosure,
   VStack,
-  Center,
 } from '@chakra-ui/react';
 import Link from 'next/link';
 import React from 'react';
@@ -23,8 +19,8 @@ import IconButton from '../buttons/IconButton';
 
 const links = [
   {
-    path: '/',
-    child: 'Home',
+    path: '/About',
+    child: 'About',
     color: 'paragraph200',
   },
   {
@@ -84,7 +80,7 @@ const Header = () => {
           display={{ base: 'none', sm: 'none', md: 'revert' }}
         >
           {links.map((link) => (
-            <NavLink key={link.path} color={link.color}>
+            <NavLink key={link.path} href={link.path} color={link.color}>
               {link.child}
             </NavLink>
           ))}
