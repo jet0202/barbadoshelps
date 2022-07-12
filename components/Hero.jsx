@@ -59,7 +59,7 @@ const Hero = () => {
           left={{ base: '60', md: '0' }}
         >
           <motion.div
-            initial={{ x: 300, opacity: 0, zIndex: 2 }}
+            initial={{ opacity: 0, zIndex: 2 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, ease: 'anticipate' }}
           >
@@ -71,7 +71,7 @@ const Hero = () => {
             />
           </motion.div>
           <motion.div
-            initial={{ x: -300, opacity: 0, zIndex: 2 }}
+            initial={{ x: -200, opacity: 0, zIndex: 2 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, ease: 'anticipate' }}
           >

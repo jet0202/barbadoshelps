@@ -5,6 +5,7 @@ import {
   Heading,
   HStack,
   Image,
+  Link,
   SimpleGrid,
   Text,
   VStack,
@@ -184,7 +185,7 @@ const About = () => {
             borderRadius="40px"
             fontWeight={'light'}
           >
-            Learn More
+            <Link href="/OurTeam">Learn More</Link>
           </Button>
         </Box>
       </HStack>

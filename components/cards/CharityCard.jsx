@@ -11,6 +11,7 @@ const CharityCard = ({ name, image, summary }) => {
       textAlign={'center'}
       maxW={{ base: '100%', md: '90%' }}
       minH={{ base: '400px', md: '480px' }}
+      bgColor={'white'}
     >
       <Image
         src={image}

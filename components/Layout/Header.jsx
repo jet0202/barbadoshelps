@@ -107,7 +107,7 @@ const Header = () => {
           <DrawerBody>
             <VStack align="center" justify="center" pt={'40'} spacing={8}>
               {links.map((link) => (
-                <NavLink color={link.color} key={link.child}>
+                <NavLink color={link.color} href={link.path} key={link.child}>
                   {link.child}
                 </NavLink>
               ))}
