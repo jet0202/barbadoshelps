@@ -39,10 +39,10 @@ export default function Home() {
         <SimpleGrid columns={[1, null, 5]} spacingY={{ base: 6, md: 'revert' }} >
           {charities.map((charity) => (
             <VStack key={charity.name} spacing={8}>
-              <CharityCard name={charity.name} image={charity.image} summary={charity.summary} />
+              <CharityCard name={charity.name} image={charity.image[0]} summary={charity.summary} />
               <HStack spacing={4}>
                 <IconButton size={'xs'}>Help Now</IconButton>
-                <Link color={'brand300'} fontWeight={"medium"}>Learn More</Link>
+                <Link color={'brand300'} fontWeight={"medium"} href={'Charities/' + charity.id}>Learn More</Link>
               </HStack>
             </VStack>
           ))}
@@ -55,7 +55,7 @@ export default function Home() {
       {/* Register Charity */}
       <VStack as='section' align={'center'} justify={'center'} py={14} spacing={'8'}>
         <Image src="../helpingLady.png" alt="Dog and Cat" h={{ base: 'sm', md: 'xl' }} />
-        <Heading as="h3" size="3xl" color={'brand200'}>
+        <Heading as="h3" size="3xl" color={'brand200'} textAlign={{ base: 'center', md: 'revert' }}>
           Register your Charity
         </Heading>
         <SimpleGrid columns={[1, null, 2]} spacingY={{ base: 6, md: 'revert' }} spacingX={{ base: 'revert', md: 8 }} >

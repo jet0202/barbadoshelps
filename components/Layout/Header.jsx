@@ -24,7 +24,7 @@ const links = [
     color: 'paragraph200',
   },
   {
-    path: '/charities',
+    path: '/Charities',
     child: 'Charities',
     color: 'paragraph200',
   },

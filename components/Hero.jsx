@@ -66,7 +66,7 @@ const Hero = () => {
             <Image
               src="../hero/woman.png"
               alt="Older woman smiling"
-              h={{ base: '36', md: '2xl' }}
+              h={{ base: '32', md: '2xl' }}
               zIndex="1"
             />
           </motion.div>

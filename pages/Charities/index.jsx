@@ -8,10 +8,10 @@ import {
   SimpleGrid,
   VStack,
 } from '@chakra-ui/react';
-import CharityCard from '../components/cards/CharityCard';
+import CharityCard from '../../components/cards/CharityCard';
 import React from 'react';
-import { charities } from '../charityData';
-import IconButton from '../components/buttons/IconButton';
+import { charities } from '../../charityData';
+import IconButton from '../../components/buttons/IconButton';
 
 const Charities = () => {
   return (
@@ -43,12 +43,16 @@ const Charities = () => {
             <VStack key={charity.name} spacing={8}>
               <CharityCard
                 name={charity.name}
-                image={charity.image}
+                image={charity.image[0]}
                 summary={charity.summary}
               />
               <HStack spacing={4}>
                 <IconButton size={'xs'}>Help Now</IconButton>
-                <Link color={'brand300'} fontWeight={'medium'}>
+                <Link
+                  color={'brand300'}
+                  fontWeight={'medium'}
+                  href={'/Charities/' + charity.id}
+                >
                   Learn More
                 </Link>
               </HStack>
