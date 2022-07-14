@@ -24,7 +24,7 @@ const HowToHelp = () => {
         py={8}
         spacing={20}
       >
-        <Image src="../giving.png" alt="" h={{ base: '28', md: 'lg' }} />
+        <Image src="../giving.png" alt="" h={{ base: 'xs', md: 'lg' }} />
         <VStack align={'left'} spacing={4} maxW={{ base: '98%', md: '30%' }}>
           <Heading size={'3xl'} color={'brand200'}>
             How to Help
@@ -81,7 +81,7 @@ const HowToHelp = () => {
             align={'left'}
             bgColor={'accent'}
             borderRadius={'50px'}
-            px={10}
+            px={'10'}
             py={'8'}
             color={'white'}
             h={{ base: 'auto', md: '330px' }}
@@ -105,7 +105,11 @@ const HowToHelp = () => {
           </VStack>
         </Stack>
       </Box>
-      <VStack bgColor={'siteBackground2'} py={'32'} spacing={'12'}>
+      <VStack
+        bgColor={'siteBackground2'}
+        py={{ base: '6', md: '32' }}
+        spacing={'12'}
+      >
         <Text
           textAlign={'center'}
           fontSize={'xs'}

@@ -66,7 +66,7 @@ const Hero = () => {
             <Image
               src="../hero/woman.png"
               alt="Older woman smiling"
-              h={{ base: '32', md: '2xl' }}
+              h={{ base: '32', md: '2xl', lg: 'lg' }}
               zIndex="1"
             />
           </motion.div>
@@ -78,7 +78,7 @@ const Hero = () => {
             <Image
               src="../hero/heroTag.svg"
               alt="Barbados Cancer Society"
-              h={'24'}
+              h={{ md: '24', lg: '20' }}
               position={'absolute'}
               zIndex={'2'}
               bottom={'20'}

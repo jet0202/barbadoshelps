@@ -62,7 +62,7 @@ const Header = () => {
       <HStack
         as={'header'}
         align={'center'}
-        h={'10vh'}
+        h={{ md: '10vh', lg: '12vh' }}
         justify={'space-between'}
         p={'1.5rem'}
         backgroundColor={'siteBackground'}

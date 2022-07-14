@@ -41,7 +41,7 @@ const About = () => {
         pr={{ base: '8', md: '44' }}
       >
         <Box w={'50%'}>
-          <Image src="../girl.png" alt="little girl" />
+          <Image src="../girl.png" alt="little girl" h={{ md: '2xl' }} />
         </Box>
         <Box width={{ base: '100%', md: '40%' }}>
           <Heading size={'3xl'} color={'brand200'} mb={{ base: '10' }}>
@@ -92,7 +92,7 @@ const About = () => {
       {/* How to help */}
       <HStack
         backgroundColor={'siteBackground2'}
-        minH={'70vh'}
+        maxH={'65vh'}
         flexDirection={{ base: 'column', md: 'row-reverse' }}
         align={'center'}
         justify={{ base: 'space-around' }}
@@ -100,7 +100,7 @@ const About = () => {
         pr={{ base: '8', md: '44' }}
       >
         <Box w={'50%'}>
-          <Image src="../dog.png" alt="little girl" />
+          <Image src="../dog.png" alt="little girl" h={{ md: '2xl' }} />
         </Box>
         <Box width={{ base: '100%', md: '40%' }}>
           <Heading size={'3xl'} color={'brand200'} mb={{ base: '10' }}>

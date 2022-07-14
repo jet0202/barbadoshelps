@@ -71,7 +71,7 @@ const CharityPage = () => {
           >
             {charity?.name}
           </Heading>
-          <Box maxW={'70%'}>
+          <Box align={'left'}>
             <IconButton>Help Now</IconButton>
           </Box>
         </VStack>

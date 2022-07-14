@@ -10,14 +10,14 @@ const CharityCard = ({ name, image, summary }) => {
       boxShadow={'0px 4px 4px rgba(0, 0, 0, 0.25)'}
       textAlign={'center'}
       maxW={{ base: '100%', md: '90%' }}
-      minH={{ base: '400px', md: '480px' }}
+      h={{ base: '400px', md: '480px' }}
       bgColor={'white'}
     >
       <Image
         src={image}
         alt=""
         borderTopRadius={'20px'}
-        h={{ base: 'auto', md: '45%' }}
+        h={{ base: '45%', md: '45%' }}
         w={{ base: '100%', md: '100$' }}
         objectFit={'cover'}
       />

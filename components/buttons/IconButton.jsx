@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Image } from '@chakra-ui/react';
+import { Button, Image, Link } from '@chakra-ui/react';
 
 const IconButton = ({ children, size }) => {
   return (
